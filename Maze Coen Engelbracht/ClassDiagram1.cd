@@ -1,0 +1,160 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1">
+  <Class Name="MazeCamera">
+    <Position X="10.25" Y="2.75" Width="1.75" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAACAAAAAAAACAAAAAAAAAAAAEAAAAAEAAAAA=</HashCode>
+      <FileName>Assets\Scripts\Cameras\MazeCamera.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="GameInstance">
+    <Position X="0.5" Y="1.25" Width="1.5" />
+    <AssociationLine Name="mazeGenerationManager" Type="MazeGenerationManager" FixedFromPoint="true" FixedToPoint="true">
+      <Path>
+        <Point X="2" Y="1.925" />
+        <Point X="4.25" Y="1.925" />
+        <Point X="4.25" Y="2.75" />
+      </Path>
+    </AssociationLine>
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAEAAAAAAAAAgAgAAAABAAAAgUAAAAAAAAEA=</HashCode>
+      <FileName>Assets\Scripts\Managers\GameInstance.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Field Name="mazeCamera" />
+      <Field Name="mazeGenerationManager" />
+      <Field Name="uiManager" />
+      <Field Name="inputManager" />
+      <Field Name="playerManager" />
+    </ShowAsAssociation>
+  </Class>
+  <Class Name="InputManager">
+    <Position X="5" Y="2.75" Width="1.75" />
+    <TypeIdentifier>
+      <HashCode>BAyAAAAAACAAAAAAAAAQIAAAAIAgACAUAACAAAAgEAA=</HashCode>
+      <FileName>Assets\Scripts\Managers\InputManager.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="MazeGenerationManager">
+    <Position X="2.5" Y="2.75" Width="2" />
+    <AssociationLine Name="wallPartPrefab" Type="WallPart" FixedToPoint="true">
+      <Path>
+        <Point X="3.688" Y="7.319" />
+        <Point X="3.688" Y="8.25" />
+      </Path>
+    </AssociationLine>
+    <AssociationLine Name="mazePartPrefab" Type="MazePart" FixedFromPoint="true" FixedToPoint="true">
+      <Path>
+        <Point X="2.5" Y="5.035" />
+        <Point X="1.375" Y="5.035" />
+        <Point X="1.375" Y="5.5" />
+      </Path>
+      <MemberNameLabel ManuallyPlaced="true">
+        <Position X="-0.721" Y="0.558" />
+      </MemberNameLabel>
+    </AssociationLine>
+    <TypeIdentifier>
+      <HashCode>QgAAAAYAACIAgAAEAIAAAMAAAACAWAABAAQAAAAACAA=</HashCode>
+      <FileName>Assets\Scripts\Managers\MazeGenerationManager.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Field Name="wallPartPrefab" />
+      <Field Name="mazePartPrefab" />
+    </ShowAsAssociation>
+  </Class>
+  <Class Name="PlayerManager">
+    <Position X="7.25" Y="2.75" Width="2.5" />
+    <TypeIdentifier>
+      <HashCode>BAAAAAAAACAAAAASAIAAAAQABAABEAAEAQAABQAAASA=</HashCode>
+      <FileName>Assets\Scripts\Managers\PlayerManager.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Field Name="currentPlayerCharacter" />
+    </ShowAsAssociation>
+  </Class>
+  <Class Name="UIManager">
+    <Position X="12.5" Y="2.75" Width="2" />
+    <AssociationLine Name="gameOverCanvasPrefab" Type="GameOverCanvas" FixedFromPoint="true" FixedToPoint="true">
+      <Path>
+        <Point X="14.5" Y="5.312" />
+        <Point X="15.312" Y="5.312" />
+        <Point X="15.312" Y="6" />
+      </Path>
+      <MemberNameLabel ManuallyPlaced="true">
+        <Position X="0.141" Y="0.07" />
+      </MemberNameLabel>
+    </AssociationLine>
+    <AssociationLine Name="createMazeCanvasPrefab" Type="CreateMazeCanvas" FixedFromPoint="true" FixedToPoint="true">
+      <Path>
+        <Point X="12.5" Y="5.375" />
+        <Point X="12.357" Y="5.375" />
+        <Point X="12.357" Y="6" />
+      </Path>
+    </AssociationLine>
+    <TypeIdentifier>
+      <HashCode>AAAAhAAQACAAAAAAAQAAIAAAAAAAAIAAAABAgAAAAAg=</HashCode>
+      <FileName>Assets\Scripts\Managers\UIManager.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Field Name="gameOverCanvasPrefab" />
+      <Field Name="createMazeCanvasPrefab" />
+    </ShowAsAssociation>
+  </Class>
+  <Class Name="MazePart">
+    <Position X="0.5" Y="5.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>BABAAEAQAQAAAAAAAAAAIAAAAAAAEEAEgAAAAKQACWA=</HashCode>
+      <FileName>Assets\Scripts\Maze\MazePart.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="PlayerCharacter">
+    <Position X="7.75" Y="8" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAKAAAAAEAAAAIAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Assets\Scripts\Maze\PlayerCharacter.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="WallPart">
+    <Position X="2.75" Y="8.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Assets\Scripts\Maze\WallPart.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="CreateMazeCanvas">
+    <Position X="11" Y="6" Width="2" />
+    <TypeIdentifier>
+      <HashCode>AAAABAAAACAAAIQAAAAIAAAAAAAAAAABQAAABAAAAAA=</HashCode>
+      <FileName>Assets\Scripts\UI\CreateMazeCanvas.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="GameOverCanvas">
+    <Position X="14.25" Y="6" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>BAAAgAAAAgAAABAAAAAAAAAAAAAAAAAQAQAAAAAAAMA=</HashCode>
+      <FileName>Assets\Scripts\UI\GameOverCanvas.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Enum Name="Algorithm">
+    <Position X="16.75" Y="3" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAgAAAAAIAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Assets\Scripts\Enums\Algorithm.cs</FileName>
+    </TypeIdentifier>
+  </Enum>
+  <Enum Name="Difficulty">
+    <Position X="16.75" Y="6.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAACAAAAAAAAAAAAAAAAAAAAAAAAAAAAAkAAA=</HashCode>
+      <FileName>Assets\Scripts\Enums\Difficulty.cs</FileName>
+    </TypeIdentifier>
+  </Enum>
+  <Enum Name="Direction">
+    <Position X="16.75" Y="4.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAIAAAAAAAAAAAAAAAAAAAAAAAAACACAAAAAAAI=</HashCode>
+      <FileName>Assets\Scripts\Enums\Direction.cs</FileName>
+    </TypeIdentifier>
+  </Enum>
+  <Font Name="Segoe UI" Size="9" />
+</ClassDiagram>
